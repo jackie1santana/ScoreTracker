@@ -6,27 +6,43 @@ var p1Score = 0;
 var p2Score = 0;
 var input = document.querySelector("input[type='number']");
 var reset = document.querySelector("#reset");
-
-
+var winner = document.querySelector(".winner")
 
 p1button.addEventListener('click', function(){
-  if(p1Score != '5'){
+  if(p1Display.textContent != input.value){
         p1Display.textContent = `${p1Score++}`
         
     }else{
-        p1Display.textContent = '5';
+        p1Display.textContent = input.value;
         p1Display.classList.add("color");
+        winner.innerHTML = 'YAY!! Player 1 YOU WIN!!!'
+        winner.classList.add("winCenter");
+
+        setInterval(function(){winner.innerHTML = 'YAY!! Player 2 YOU WIN!!!';
+        winner.classList.add("winCenter"); }, 500);
+
+        setInterval(function(){winner.innerHTML = ''; }, 1050);
     }
+        
+    
 });
 
 
 p2button.addEventListener('click', function(){
-    if(p2Score != '5'){
+    if(p2Display.textContent != input.value){
         p2Display.textContent = `${p2Score++}`
         
     }else{
-        p2Display.textContent = '5';
+        p2Display.textContent = input.value;
         p2Display.classList.add("color");
+
+        winner.innerHTML = 'YAY!! Player 2 YOU WIN!!!'
+        winner.classList.add("winCenter");
+
+        setInterval(function(){winner.innerHTML = 'YAY!! Player 2 YOU WIN!!!';
+        winner.classList.add("winCenter"); }, 500);
+
+        setInterval(function(){winner.innerHTML = ''; }, 1050);
     }
 });
 
@@ -44,3 +60,6 @@ var update = document.querySelector("#update");
   update.textContent = input.value;
 
 })
+
+//why when i click 2 , i have to click it to 3 to make it activate?
+//why the rest wont reset the you win sentence
