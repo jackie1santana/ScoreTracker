@@ -7,6 +7,16 @@
     <title>Score Tracker</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style type="text/css">
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+           
+            width: 100%;
+        
+            color: black;
+            text-align: center;
+          }
      .color{
          color: green;
      }
@@ -33,12 +43,12 @@
 
                 <h3>Enter a Number Below</h3>
                 <p><em>What Number Would You Like to Play Up to?</em></p>
-                <input type="number">
+                <input type="number" onfocus="this.value=''" id="myInput">
                 <br>
                 <br>
                 <button id="p1">Player One</button>
                 <button id="p2">Player Two</button>
-                <button id="reset">Reset</button>
+                <button id="reset" onclick="document.getElementById('myInput').value = ''">Reset</button>
                 <br>
                 <br>
                 <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
@@ -48,7 +58,9 @@
                 <h1 class="winner"></h1>
               </div>
         <div>
-    
+            <div class="footer">
+                <p>Jackie Santana <br>  Copyright &copy; 2019 All Rights Reserved</p>
+              </div>
 
 <script src="promise.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
