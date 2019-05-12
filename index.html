@@ -7,11 +7,17 @@
     <title>Score Tracker</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style type="text/css">
+        html {
+            position: relative;
+            min-height: 100%;
+        }
         .footer {
-            position: fixed;
-    bottom:0;
-    width:100%;
-        
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
             color: black;
             text-align: center;
           }
@@ -20,6 +26,7 @@
      }
      body{
          background-color: pink;
+         margin: 0 0 100px;
      }
      div{
          text-align: center;
@@ -55,10 +62,12 @@
                 
                 <h1 class="winner"></h1>
               </div>
-        <div>
-            <div class="footer">
+
+              <div class="footer">
                 <p>Jackie Santana <br>  Copyright &copy; 2019 All Rights Reserved</p>
               </div>
+        <div>
+            
 
 <script src="promise.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
