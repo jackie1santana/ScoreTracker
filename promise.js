@@ -8,18 +8,21 @@ var input = document.querySelector("input[type='number']");
 var reset = document.querySelector("#reset");
 var winner = document.querySelector(".winner")
 
+
+
 p1button.addEventListener('click', function(){
   if(p1Score != input.value  || p1Score < input.value){
         p1Display.textContent = `${p1Score++}`
         
     }else{
+        winner.style.display = 'block';
         p1Display.textContent = input.value;
         p1Display.classList.add("color");
-        winner.style.display = 'block'
-        setInterval(function(){winner.innerHTML = 'YAY!! Player 1 YOU WIN!!!';
-        winner.classList.add("winCenter"); }, 500);
+        
+       setTimeout(function(){winner.innerHTML = 'YAY!! Player 1 YOU WIN!!!';
+        winner.classList.add("winCenter"); }, 100);
 
-        setInterval(function(){winner.innerHTML = ''; }, 1050);
+        setTimeout(function(){winner.innerHTML = ''; }, 3000);
     }
         
     
@@ -30,15 +33,19 @@ p2button.addEventListener('click', function(){
     if(p2Score != input.value  || p2Score < input.value){
         p2Display.textContent = `${p2Score++}`
         
+      
     }else{
+        winner.style.display = 'block';
         p2Display.textContent = input.value;
         p2Display.classList.add("color");
-        winner.style.display = 'block'
+        
 
-        setInterval(function(){winner.innerHTML = 'YAY!! Player 2 YOU WIN!!!';
-        winner.classList.add("winCenter"); }, 500);
+        setTimeout(function(){winner.innerHTML = 'YAY!! Player 2 YOU WIN!!!';
+        winner.classList.add("winCenter"); }, 100);
 
-        setInterval(function(){winner.innerHTML = ''; }, 1050);
+        setTimeout(function(){winner.innerHTML = ''; }, 3000);
+
+        
     }
 });
 
@@ -51,8 +58,8 @@ reset.addEventListener('click', function(){
     p1Display.classList.remove("color");
     p2Display.classList.remove("color");
     update.textContent = '';
-2
-winner.style.display = 'none'
+    winner.style.display = 'none';
+    
 }
 
 );
