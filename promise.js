@@ -59,7 +59,7 @@ reset.addEventListener('click', function(){
     p2Display.classList.remove("color");
     update.textContent = '';
     winner.style.display = 'none';
-    onclick="document.getElementById('myInput').value = ''"
+    
 }
 
 );
