@@ -1,15 +1,15 @@
 
 
-@media (min-width: 400px) {     
+@media (min-width: 380px) {     
     .toast{
 
         position:absolute;
-            left: 1%;
-            top:11em;
+            left: 35%;
+            bottom:5em;
             background: rgb(216, 214, 216);
-            width: 110px;
-            height:180px;
-            font-size: 11px;   
+            width: 150px;
+            height: 150px;
+            font-size: 12px;   
            
         
         }
