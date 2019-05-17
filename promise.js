@@ -79,3 +79,9 @@ $('.toast').toast('show')
 $(".x").click(function(){
     $(".toast").toast('hide')
 })
+
+var x = document.querySelector(".x");
+
+x.addEventListener('click', function(){
+    x.style.display = 'none'
+})
