@@ -1,9 +1,91 @@
-body{
-    background-image: url("brick.jpg");
-    height: 100%; 
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+@media (min-width: 400px) {     
+    .toast{
+
+        position:absolute;
+            left: 1%;
+            top:11em;
+            background: rgb(216, 214, 216);
+            width: 110px;
+            height:180px;
+            font-size: 11px;   
+           
+        
+        }
+ 
 }
+
+@media (min-width: 576px) {
+    .toast{
+
+    position:absolute;
+        left: 1%;
+        top:12em;
+        background: rgb(216, 214, 216);
+        width: 150px;
+        height:150px;
+        
+        
+    
+    } }
+
+@media (min-width: 768px) {
+   
+    .toast{
+
+        position:absolute;
+            left: 4%;
+            top:10em;
+            background: rgb(216, 214, 216);
+            width: 200px;
+                  
+            font-size: 14px;  
+        
+        }
+}
+
+@media (min-width: 992px) {   
+
+.toast{
+  
+    position:absolute;
+        left: 10%;
+        top:10em;
+        background: rgb(216, 214, 216);
+        width: 200px;
+        font-size: 15px;  
+        
+       
+    }
+}
+
+
+@media (min-width: 1200px) {     
+    .toast{
+  
+        position:absolute;
+            left: 22%;
+            top:10em;
+            background: rgb(216, 214, 216);
+            width: 200px;
+           
+            font-size: 15px;  
+        }
+    }
+
+     
+    
+    @media (min-width: 1320px) {     
+        .toast{
+      
+            position:absolute;
+                left: 29%;
+                top:10em;
+                background: rgb(216, 214, 216);
+                width: 200px;
+                font-size: 16px;  
+            
+            }
+        }
+    

@@ -71,3 +71,13 @@ var update = document.querySelector("#update");
 )
 
 
+//toast
+
+$('.toast').toast('show')
+
+
+$("span").click(function(){
+    $("div .toast").remove()
+})
+
+  
