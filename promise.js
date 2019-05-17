@@ -76,8 +76,6 @@ var update = document.querySelector("#update");
 $('.toast').toast('show')
 
 
-$("span").click(function(){
-    $("div .toast").remove()
+$(".x").click(function(){
+    $(".toast").toast('hide')
 })
-
-  
